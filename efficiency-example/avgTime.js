@@ -8,6 +8,7 @@ const sumIntegers = (n) => {
     return sum;
 }
 
+// Much more efficient
 const sumIntegers2 = (n) => {
     return n * (n + 1) / 2;
 }
@@ -19,7 +20,7 @@ let sumOfRunningTime = 0n;
 
 for (let k = 1; k <= NUMBER_OF_REPETITIONS; k++) {
     const start = process.hrtime.bigint();
-    const answer = sumIntegers2(N); //sumIntegers(N);
+    const answer = sumIntegers2(N);//sumIntegers(N);
     const end = process.hrtime.bigint();
     
     sumOfRunningTime += (end - start);

@@ -1,5 +1,5 @@
 
-// Inefficient 
+// Inefficient - linar
 const sumIntegers = (n) => {
     let sum = 0;
     for(let i = 1; i <= n; i++) {
@@ -8,13 +8,13 @@ const sumIntegers = (n) => {
     return sum;
 }
 
-// Much more efficient
+// Much more efficient - constant 
 const sumIntegers2 = (n) => {
     return n * (n + 1) / 2;
 }
 
 const NUMBER_OF_REPETITIONS = 10;
-const N = 20000;
+const N = 9999999999999999999999999;
 
 let sumOfRunningTime = 0n;
 
